@@ -24,18 +24,31 @@ body {
   height: 100px;
 }
 .logo {
-  padding-top: 25px
+  padding-top: 31px
 }
-.logo img{
-  height: 35px;
+.logo img {
+  height: 33px;
 }
 .menu_link {
   padding-top: 40px
+}
+.menu_link li {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px
+}
+.menu_link a {
+  text-decoration: none;
+  color: #373839
 }
 .menu_icon {
   display: flex;
   margin-left: 30px;
   padding-top: 40px;
+}
+.menu_icon i{
+  margin-left: 5px;
+  margin-right: 5px
 }
 /* fine sezione navbar */
 
