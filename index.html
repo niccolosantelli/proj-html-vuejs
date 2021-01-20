@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,9 +43,46 @@
     <!-- sezione centrale header -->
     <div class="main_header">
       <div class="sfondo_human">
-
+        <div class="box_human">
+          <div class="titolo_human">
+            <h1 class="line1">Start your Human <span>Revolution</span> today </h1>
+          </div>
+          <div class="stt_human">
+            <p>A Wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring witch i enjoy with my whole heart.  </p>
+          </div>
+        </div>
       </div>
       <div class="box_giallo">
+        <div class="giallo_sx">
+          <div class="box_gl_sx">
+            <div class="limited">
+              <h3> <span>Limited Sale: All courses with 55% off   </span> </h3>
+            </div>
+            <div class="email">
+              <form class="" action="index.html" method="post">
+                <input type="text" name="" value="Enter your Email" class="input_email">
+                <button type="button" name="button"class="button_email">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="giallo_dx">
+          <div class="box_gl_dx">
+            <div class="time">
+              <p>26</p>
+              <p>01</p>
+              <p>47</p>
+              <p>05</p>
+            </div>
+            <div class="day">
+              <p>Days</p>
+              <p>Hours</p>
+              <p>Minutes</p>
+              <p>Seconds</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
       <div class="parte_bianco dflex">
@@ -50,6 +90,7 @@
           <div class="card_pb_sx">
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quidem?</h3>
           </div>
+          <img class="img_firma"src="assets/img/sign.jpg" alt="">
         </div>
 
         <div class="conteiner_pb_dx">
@@ -66,34 +107,155 @@
   <main>
     <!-- sezione new courses  -->
     <div class="section_newcourses">
+      <div class="tiltolo_nc">
+        <h2>New Courses</h2>
+      </div>
       <div class="sotto_section_nc">
-        <div class="card_courses">
-
-        </div>
+          <div v-for="document in documents" class="card_courses">
+            <div class="sezione_img">
+              <div class="overlay">
+                <div class="piu_box">
+                  <h3>{{document.prezzo}}</h3>
+                </div>
+              </div>
+              <img :src="document.img" alt="">
+            </div>
+            <div class="titolo_corso">
+              <h5>{{document.titolo}}</h5>
+            </div>
+            <div class="tipo_corso">
+              <p>{{document.tipo}}</p>
+            </div>
+            <hr>
+            <div class="icone_card">
+              <i class="fas fa-signal"></i>
+              <p>{{document.difficolta}}</p>
+              <i class="fas fa-list-ul"></i>
+              <p>{{document.quantita}}</p>
+              <i class="far fa-clock"></i>
+              <p>{{document.durata}}</p>
+            </div>
+          </div>
+      </div>
+      <div class="tc mt_50">
+        <button type="button" name="button">LOAD MORE</button>
       </div>
     </div>
     <!-- fine sezione new courses -->
 
     <!-- sezione book -->
-    <div class="section_book">
-
+    <div class="section_book dflex">
+      <div class="section_book_sx">
+        <div class="tc titolo_book">
+          <h3 >Get my exclusive investing book just fot $19.50  </h3>
+        </div>
+        <div class="tc sotto_titolo_book">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae nostrum voluptatibus corporis, illum fugit.</p>
+        </div>
+        <div class="tc logo_fb">
+          <img src="assets/img/amazon.png" alt="">
+        </div>
+      </div>
+      <div class="section_book_dx">
+        <img src="assets/img/book.png" alt="">
+      </div>
     </div>
     <!-- fine sezione book -->
 
     <!-- sezione why my courses -->
     <div class="section_my_courses">
+      <div class="my_courses">
+      <div class="tc">
+        <h3>Why my Courses</h3>
+      </div>
+      <div class="box1_myCourses">
+        <div class="Entrepership">
 
+        </div>
+        <div class="Accellerated">
+
+        </div>
+        </div>
+      <div class="box2_myCourses">
+        <div class="productivity">
+
+        </div>
+        <div class="Life">
+
+        </div>
+      </div>
+
+    </div>
     </div>
     <!-- fine sezione why my courses -->
 
     <!-- sezione icone -->
     <div class="section_icons">
-
+      <div class="box_icone dflex">
+        <div class="leraner dflex">
+         <div class="">
+           <i class="fas fa-user-friends"></i>
+         </div>
+         <div class="">
+           <p>345</p>
+           <p>disp</p>
+         </div>
+        </div>
+        <div class="leraner dflex">
+         <div class="">
+           <i class="fas fa-film"></i>
+         </div>
+         <div class="">
+           <p>345</p>
+           <p>disp</p>
+         </div>
+        </div>
+        <div class="leraner dflex">
+         <div class="">
+           <i class="far fa-image"></i>
+         </div>
+         <div class="">
+           <p>345</p>
+           <p>disp</p>
+         </div>
+        </div>
+        <div class="leraner dflex">
+         <div class="">
+           <i class="far fa-thumbs-up"></i>
+         </div>
+         <div class="">
+           <p>345</p>
+           <p>disp</p>
+         </div>
+        </div>
+      </div>
     </div>
     <!-- fine sezione icone -->
 
     <!-- sezione recensioni -->
     <div class="section_recensioni">
+      <div class="tc">
+        <h1>What Students Say</h1>
+      </div>
+      <div class="container_slider">
+        <div class="slider_wrapper dflex">
+          <div class="prev" @click="prevImg">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="images_slider">
+            <img class="active" :src="avatar[counter]" alt="">
+          </div>
+          <div class="prev" @click="nextImg">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+        <div class="">
+
+        </div>
+
+
+
+      </div>
 
     </div>
     <!-- fine sezione recensioni -->
@@ -101,9 +263,28 @@
 
   <footer>
     <div class="section_footer">
+      <div class="box_footer">
+        <div class="">
+          <h4>ABOUT</h4>
+
+        </div>
+        <div class="">
+          <h4>CONCACT</h4>
+
+        </div>
+        <div class="">
+          <h4>PAGES</h4>
+
+        </div>
+        <div class="">
+          <h4>BLOG</h4>
+
+        </div>
+      </div>
+
+
 
     </div>
-
   </footer>
   </div>
 

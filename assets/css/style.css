@@ -9,11 +9,26 @@ body {
 }
 
 /* utility */
+.mt_50{
+  margin-top: 50px
+}
 .dflex {
   display: flex;
 }
 .just_cont {
   justify-content: space-between;
+}
+.tc {
+  text-align: center;
+}
+.line1{
+  line-height: 1.1
+}
+h1 {
+    font-family: 'Roboto Slab';
+}
+p{
+  font-family:  'Open Sans';
 }
 
 
@@ -39,7 +54,9 @@ body {
 }
 .menu_link a {
   text-decoration: none;
-  color: #373839
+  color: #373839;
+  font-family: 'Roboto Slab';
+  font-weight: 600;
 }
 .menu_icon {
   display: flex;
@@ -63,7 +80,28 @@ body {
   background-image: url(../img/slide-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
+.box_human {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -82%);
+}
+.titolo_human{
+  font-size: 26px;
+}
+.titolo_human span{
+  color: #f2b71d
+}
+.stt_human {
+  width: 445px;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
 /* fine sezione sfondo */
 /* sezione box giallo */
 .box_giallo {
@@ -75,6 +113,82 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -7%);
+  display: flex;
+}
+.giallo_sx{
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.box_gl_sx{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.limited{
+  width: 500px;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.input_email{
+  width: 400px;
+  height: 48px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 12px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 22px;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+.button_email{
+  height: 48px;
+  width: 105px;
+  border-radius: 25px;
+  outline: none;
+  padding: 5px;
+  position: absolute;
+  left: 335px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  background-color: #4d5156
+  }
+}
+}
+.giallo_dx{
+  width: 40%;
+  position: relative;
+}
+
+.box_gl_dx{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(22%, -53%);
+}
+.time{
+  display: flex;
+  justify-content: space-between;
+}
+.day{
+  display: flex;
+  width: 280px
+}
+.time p {
+  font-size: 52px;
+  padding: 7px
+}
+.day p{
+  padding-left: 27px
 }
 /* fine sezione box giallo */
 /* sezione parte bianca */
@@ -94,6 +208,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.img_firma{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, 90%);
+  height: 70px;
+}
 .card_pb_dx {
   position: absolute;
   top: 50%;
@@ -107,15 +228,85 @@ body {
 /* sezione main */
 /* sezione new courses */
 .section_newcourses {
-  height: 700px;
+  height: 950px;
   background-color: #e4e7e7;
 }
 .sotto_section_nc {
   width: 60%;
   margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tiltolo_nc {
+  width: 100%;
+  text-align: center;
+  padding-top: 45px;
 }
 .card_courses {
+  width: 275px;
+  height: 335px;
+  background-color: white;
+  margin-top: 35px;
+}
+.sezione_img {
+  position: relative;
+  height: 180px;
+}
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.sezione_img img {
+  height: 180px;
+  width: 275px;
+}
+.titolo_corso {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+.tipo_corso {
+  text-align: center;
+  padding: 10px;
+}
+.card_courses hr {
+  max-width: 200px;
+  margin: auto;
+}
+.icone_card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.icone_card i {
+  font-size: 12px
+}
+.icone_card p {
+  font-size: 10px;
+  margin-left: -20px
+}
 
+.piu_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.sezione_img:hover .overlay{
+  display: block;
+  cursor: pointer;
 }
 /* fine sezione new courses */
 
@@ -126,12 +317,102 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section_book_sx{
+  width: 70%;
+  height: 100%
+}
+.section_book_dx{
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.section_book_dx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-97%, -47%);
+  height: 430px;
+}
+.section_book_sx{
+  position: relative;
+}
+.titolo_book{
+  width: 543px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -190px);
+  color: orange;
+  font-size: 40px
+}
+
+.sotto_titolo_book{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  font-size: 21px;
+  color: white;
+}
+.logo_fb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 85%);
+}
+
+
 /* fine sezione section_book  */
 
 /* sezione why my courses  */
-.section_my_courses {
-  height: 550px;
+.section_my_courses{
+  height: 625px;
+  background-color: #e4e7e7
+}
+.my_courses {
+  max-width: 60%;
+  margin: auto;
+}
+.box1_myCourses{
+  width: 100%;
+  height: 50%;
 
+  display:flex;
+}
+.box2_myCourses{
+  width: 100%;
+  height: 50%;
+
+  display:flex;
+}
+.Entrepership{
+  width: 410px;
+      height: 209px;
+      background-color: white;
+      margin-right: 5%;
+      margin-top: 70px;
+}
+
+.Accellerated{
+  width: 410px;
+      height: 209px;
+      background-color: white;
+      margin-top: 70px;
+}
+.productivity{
+  width: 410px;
+    height: 209px;
+    background-color: white;
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+.Life{
+  width: 410px;
+      height: 209px;
+      background-color: white;
+
+      margin-top: 40px;
 }
 /* fine sezione why my courses */
 
@@ -141,12 +422,50 @@ body {
   background-image:url(../img/persone.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+.box_icone {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.section_icons .fas, .section_icons .far {
+  font-size: 50px
+}
+.section_icons p:first-of-type{
+  font-size: 33px;
+    margin-left: 15px;
+    margin-top: -4px;
+}
+.section_icons p{
+  margin-left: 15px;
+    margin-top: -5px;
+    font-size: 19px;
+}
+.leraner{
+  margin-left: 85px;
+  margin-right: 55px;
+  color: white;
 }
 /* fine sezione icone */
 
 /* sezione recensioni */
 .section_recensioni {
-height: 420px;
+height: 540px;
+}
+.container_slider {
+width: 60%;
+margin: auto;
+height: 500px;
+}
+.slider_wrapper .images_slider img {
+    display: none;
+    height: 100%;
+}
+.slider_wrapper .images_slider img.active {
+    display: inline-block;
 }
 /* fine sezione recensioni */
 /* fine sezione main */
@@ -156,4 +475,10 @@ height: 420px;
 .section_footer {
   height: 250px;
   background-color:#f2b71d;
+}
+.box_footer{
+  width: 60%;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
 }
