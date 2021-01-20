@@ -241,7 +241,8 @@ p{
 .tiltolo_nc {
   width: 100%;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 50px;
+  font-size: 40px;
 }
 .card_courses {
   width: 275px;
@@ -366,17 +367,20 @@ p{
 
 /* sezione why my courses  */
 .section_my_courses{
-  height: 625px;
+  height: 725px;
   background-color: #e4e7e7
 }
 .my_courses {
   max-width: 60%;
   margin: auto;
 }
+.title_section_my{
+  padding-top: 50px;
+  font-size: 40px;
+}
 .box1_myCourses{
   width: 100%;
   height: 50%;
-
   display:flex;
 }
 .box2_myCourses{
@@ -387,32 +391,70 @@ p{
 }
 .Entrepership{
   width: 410px;
-      height: 209px;
-      background-color: white;
-      margin-right: 5%;
-      margin-top: 70px;
+  height: 209px;
+  background-color: white;
+  margin-right: 5%;
+  margin-top: 70px;
+  border-left: 5px solid #f2b71d;
 }
+.card_entre{
+  width: 405px;
+  height: 205px;
+  position: relative;
+}
+.icon_my{
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-435%, -150%);
+  color: #f2b71d;
+}
+.titolo_my{
+ width: 310px
+}
+.tema_my{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-57%, -33%);
+}
+.box1_myCourses h3, .box2_myCourses h3{
+  font-size: 25px;
+}
+.text_my {
+height: 100px;
+width: 310px;
+margin-top: 20px;
+line-height: 1.9;
+font-size: 12px
+}
+
 
 .Accellerated{
   width: 410px;
-      height: 209px;
-      background-color: white;
-      margin-top: 70px;
+  height: 209px;
+  background-color: white;
+  margin-top: 70px;
+  border-left: 5px solid #f2b71d
 }
 .productivity{
   width: 410px;
-    height: 209px;
-    background-color: white;
-    margin-right: 5%;
-    margin-top: 40px;
+  height: 209px;
+  background-color: white;
+  margin-right: 5%;
+  margin-top: 40px;
+  border-left: 5px solid #f2b71d
 }
 
 .Life{
   width: 410px;
-      height: 209px;
-      background-color: white;
-
-      margin-top: 40px;
+  height: 209px;
+  background-color: white;
+  border-left: 5px solid #f2b71d;
+  margin-top: 40px;
 }
 /* fine sezione why my courses */
 
