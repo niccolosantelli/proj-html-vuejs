@@ -8,18 +8,12 @@ let app = new Vue({
         about: "Masterstudy is Education WordPress theme feautred by Learning.",
         contact: "USA, California 20, First Avenue,California",
         page: "Blog",
-        img: 'assets/img/zaino.jpeg',
-        title: 'Our main target is to "Developing Yourself as a Leader"',
-        data: "- August 9, 2018"
       },
       {
         name: "Course Formats",
         about: "Management System (LMS) for online education.",
         contact: "Tel.: +1 212 458 300 32",
         page: "Home",
-        img: 'assets/img/proiet.jpeg',
-        title: "Those Other Collage Expensese You Aren't Thinking About",
-        data: "- June 3, 2015"
       },
       {
         name: "Add Course",
@@ -38,6 +32,19 @@ let app = new Vue({
       },
       {
         page:"Typography"
+      }
+    ],
+
+    blog : [
+      {
+        img: 'assets/img/zaino.jpeg',
+        title: 'Our main target is to "Developing Yourself as a Leader"',
+        data: "- August 9, 2018"
+      },
+      {
+        img: 'assets/img/proiet.jpeg',
+        title: "Those Other Collage Expensese You Aren't Thinking About",
+        data: "- June 3, 2015"
       }
     ],
 

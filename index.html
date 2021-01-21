@@ -364,13 +364,13 @@
         </div>
         <div class="box_sott_foot box_blog">
           <h4>BLOG</h4>
-          <div v-for="voce in voceMenu" class="dflex">
+          <div v-for="item in blog" class="dflex">
             <div class="">
-              <img :src="voce.img" alt="">          
+              <img :src="item.img" alt="">
             </div>
             <div class="">
-              <h4>{{voce.title}}</h4>
-              <p>{{voce.data}}</p>
+              <h4>{{item.title}}</h4>
+              <p>{{item.data}}</p>
             </div>
           </div>
 
