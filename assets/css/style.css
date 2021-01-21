@@ -18,11 +18,17 @@ body {
 .just_cont {
   justify-content: space-between;
 }
+.just_cont_cent {
+  justify-content:center
+}
 .tc {
   text-align: center;
 }
 .line1{
   line-height: 1.1
+}
+.pt_10{
+  padding-top: 10px
 }
 h1 {
     font-family: 'Roboto Slab';
@@ -500,14 +506,36 @@ height: 540px;
 .container_slider {
 width: 60%;
 margin: auto;
-height: 500px;
+height: 180px;
+}
+.slider_wrapper {
+  position: relative;
+  justify-content: center;
+  padding-top: 50px;
+}
+.slider_wrapper .prev{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-900%, 80%);
+}
+.slider_wrapper .next{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(850%, 80%);
 }
 .slider_wrapper .images_slider img {
-    display: none;
-    height: 100%;
+  display: none;
+  height: 100%;
+  border-radius: 50%
 }
 .slider_wrapper .images_slider img.active {
-    display: inline-block;
+  display: inline-block;
+}
+.rec_stelle{
+  padding-top: 5px;
+  color: #f2b71d;
 }
 /* fine sezione recensioni */
 /* fine sezione main */

@@ -83,7 +83,8 @@ let app = new Vue({
       "assets/img/paolo.jpg",
       "assets/img/kevin.jpg",
       "assets/img/sara.jpg",
-    ]
+    ],
+
 
   },
 
