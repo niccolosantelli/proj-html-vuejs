@@ -97,7 +97,7 @@ let app = new Vue({
       },
       {
         img: 'assets/img/bici.jpeg',
-        titolo: "Road Bike Manual or How to BE a Champion",
+        titolo: "Road Bike Manual or How to Be a Champion",
         tipo: "Bicycling",
         difficolta: "Beginner",
         quantita: "6 Lectures",

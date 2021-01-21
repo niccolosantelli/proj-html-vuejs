@@ -36,6 +36,9 @@ body {
 h1 {
     font-family: 'Roboto Slab';
 }
+h2{
+    font-family: 'Roboto Slab';
+}
 p{
   font-family:  'Open Sans';
 }
@@ -48,10 +51,10 @@ p{
   height: 100px;
 }
 .logo {
-  padding-top: 31px
+  padding-top: 34px
 }
 .logo img {
-  height: 33px;
+  height: 32px;
 }
 .menu_link {
   padding-top: 40px
@@ -66,6 +69,7 @@ p{
   color: #373839;
   font-family: 'Roboto Slab';
   font-weight: 600;
+  font-size: 14px
 }
 .menu_icon {
   display: flex;
@@ -81,6 +85,7 @@ p{
 /* sezione centrale header */
 .main_header{
  position: relative;
+ height: 1065px;
 }
 
 /* sezione sfondo */
@@ -138,35 +143,43 @@ p{
 .limited{
   width: 500px;
   padding-bottom: 20px;
-  font-size: 22px;
+  font-size: 21px;
+}
+.limited h3 {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+}
+.limited span {
+  color: #ffffff
 }
 .input_email{
   width: 400px;
-  height: 48px;
+  height: 43px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 12px;
+  font-size: 11px;
   outline: none;
   box-sizing: border-box;
-  padding: 22px;
+  padding: 15px;
   border: 2px solid white;
   border-radius: 25px;
+  color: #bcbcbc
 }
 .button_email{
-  height: 48px;
-  width: 105px;
+  height: 43px;
+  width: 108px;
   border-radius: 25px;
   outline: none;
   padding: 5px;
   position: absolute;
-  left: 335px;
+  left: 347px;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 11px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
   color: white;
   background-color: #4d5156
@@ -182,22 +195,40 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(22%, -53%);
+  transform: translate(22%, -71%);
 }
 .time{
   display: flex;
   justify-content: space-between;
 }
+.time p{
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 52px;
+  padding: 7px;
+  color: #ffffff;
+  margin-right: 15px
+}
 .day{
   display: flex;
-  width: 280px
+  width: 280px;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-64%, 200%);
 }
-.time p {
-  font-size: 52px;
-  padding: 7px
+.day p {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 27px;
+  margin-right: 16px
 }
-.day p{
-  padding-left: 27px
+.day p:last-child {
+  margin-left: -14px
+}
+.day p:nth-child(2){
+  margin-left: 5px
 }
 /* fine sezione box giallo */
 /* sezione parte bianca */
@@ -207,29 +238,44 @@ p{
   height: 400px;
 }
 
-.conteiner_pb_sx, .conteiner_pb_dx{
-  width: 50%;
+.conteiner_pb_sx{
+  width: 35%;
+  position: relative;
+}
+.conteiner_pb_dx{
+  width: 75%;
   position: relative;
 }
 .card_pb_sx {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-39%, -50%);
+      width: 340px;
+}
+.card_pb_sx h2{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
 }
 .img_firma{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-35%, 90%);
-  height: 70px;
+  transform: translate(-17%, 112%);
+  height: 80px;
 }
 .card_pb_dx {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 360px;
+  transform: translate(-32%, -32%);
+  width: 516px;
+font-size: 13px;
+line-height: 1.9;
+}
+.card_pb_dx p {
+  font-family:  'Open Sans';
 }
 /* fine sezione parte bianca */
 /* fine sezione centrale header */
@@ -237,8 +283,11 @@ p{
 /* sezione main */
 /* sezione new courses */
 .section_newcourses {
-  height: 950px;
+  height: 1010px;
   background-color: #e4e7e7;
+}
+.section_newcourses h4{
+  font-family: 'Roboto Slab';
 }
 .sotto_section_nc {
   width: 60%;
@@ -252,6 +301,7 @@ p{
   text-align: center;
   padding-top: 50px;
   font-size: 40px;
+  padding-bottom: 10px
 }
 .card_courses {
   width: 275px;
@@ -277,18 +327,27 @@ p{
   width: 275px;
 }
 .titolo_corso {
-  max-width: 200px;
+  max-width: 253px;
   margin: auto;
   text-align: center;
   padding-top: 20px;
 }
+
 .tipo_corso {
   text-align: center;
   padding: 10px;
 }
+.tipo_corso p{
+  font-size: 12px;
+  color:#bcbcbc
+}
 .card_courses hr {
   max-width: 200px;
   margin: auto;
+  color: #bcbcbc;
+  background-color: #bcbcbc;
+  border: 0;
+  height: 1px
 }
 .icone_card {
   display: flex;
@@ -299,7 +358,9 @@ p{
   margin-bottom: 10px;
 }
 .icone_card i {
-  font-size: 12px
+  font-size: 12px;
+  padding-right: 20px;
+  color:#f2b71d
 }
 .icone_card p {
   font-size: 10px;
@@ -312,6 +373,22 @@ p{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 28px;
+}
+.gest_btn{
+  display: flex;
+  justify-content: center;
+}
+.button_corsi{
+  padding: 10px;
+border-radius: 20px;
+width: 100px;
+font-size: 11px;
+color: #ffffff;
+background-color: #f2b71d;
+border: none;
+margin-top: 50px;
+height: 37px
 }
 
 .sezione_img:hover .overlay{
@@ -327,6 +404,14 @@ p{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section_book h5{
+  font-family: 'Roboto Slab'
+}
+.section_book p{
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 20px
+}
 .section_book_sx{
   width: 70%;
   height: 100%
@@ -340,18 +425,18 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-97%, -47%);
+  transform: translate(-110%, -47%);
   height: 430px;
 }
 .section_book_sx{
   position: relative;
 }
 .titolo_book{
-  width: 543px;
+  width: 517px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -190px);
+  transform: translate(-50%, -162px);
   color: orange;
   font-size: 40px
 }
@@ -360,7 +445,7 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, -57%);
   font-size: 21px;
   color: white;
 }
@@ -368,7 +453,10 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 85%);
+  transform: translate(-50%, 102%);
+}
+.logo_fb img{
+  height: 65px
 }
 
 
@@ -378,6 +466,9 @@ p{
 .section_my_courses{
   height: 725px;
   background-color: #e4e7e7
+}
+.title_section_my h4{
+  font-family: 'Roboto Slab';
 }
 .my_courses {
   max-width: 60%;
@@ -483,23 +574,28 @@ font-size: 12px
 }
 
 .section_icons .fas, .section_icons .far {
-  font-size: 50px
+  font-size: 55px
 }
 .section_icons p:first-of-type{
   font-size: 33px;
     margin-left: 15px;
     margin-top: -4px;
+    color: #f2b71d;
+    font-weight: 600;
 }
 .section_icons p{
   margin-left: 15px;
     margin-top: -5px;
-    font-size: 19px;
+    font-size: 13px;
+    font-family:  'Roboto Slab';
+    width: 113px
 }
 .leraner{
   margin-left: 85px;
   margin-right: 55px;
   color: white;
 }
+
 /* fine sezione icone */
 
 /* sezione recensioni */
@@ -507,6 +603,22 @@ font-size: 12px
 height: 540px;
 width: 60%;
 margin: auto;
+}
+.section_recensioni h4{
+  padding-top: 50px;
+  font-size: 40px;
+    font-family: 'Roboto Slab';
+
+}
+.section_recensioni h3{
+  font-family: 'Roboto Slab';
+  font-size: 19px;
+margin-bottom: 3px;
+}
+.section_recensioni p{
+  width: 849px;
+line-height: 1.9;
+font-size: 15px;
 }
 .container_slider {
 width: 60%;
