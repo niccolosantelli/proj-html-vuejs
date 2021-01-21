@@ -465,7 +465,6 @@ height: 37px
 /* sezione why my courses  */
 .section_my_courses{
   height: 725px;
-  background-color: #e4e7e7
 }
 .title_section_my h4{
   font-family: 'Roboto Slab';
@@ -499,8 +498,9 @@ height: 37px
 }
 .card_entre{
   width: 405px;
-  height: 205px;
+  height: 209px;
   position: relative;
+  box-shadow: 1px 1px 1px 1px lightgrey;
 }
 .icon_my{
   position: absolute;
