@@ -500,7 +500,7 @@ height: 37px
   width: 405px;
   height: 209px;
   position: relative;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  box-shadow: 11px 10px 21px 0px rgba(163,163,163,0.8)
 }
 .icon_my{
   position: absolute;
