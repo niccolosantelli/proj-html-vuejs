@@ -312,8 +312,8 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <div class="tc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio saepe aliquid sunt rerum, aut tenetur, repellat qui tempora autem obcaecati sapiente enim porro vitae quis ipsa aliquam reiciendis doloribus est?</p>
+      <div class="tc mt_30">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi odio accusamus quae porro aut animi voluptates laudantium itaque sapiente recusandae perferendis ipsa vitae voluptate ducimus similique ab, voluptas eveniet blanditiis sit aliquam placeat, rem atque et. Consequatur veritatis, in exercitationem distinctio. Voluptatem eum maxime cum aut? Quos, voluptatibus placeat similique.</p>
       </div>
     </div>
 
@@ -323,20 +323,56 @@
   <footer>
     <div class="section_footer">
       <div class="box_footer">
-        <div class="">
+        <div class="box_sott_foot box_ab">
           <h4>ABOUT</h4>
+          <ul v-for="voce in voceMenu">
+            <li>{{voce.about}}</li>
+          </ul>
+          <div class="">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
 
         </div>
-        <div class="">
+        <div class="box_sott_foot box_cont">
           <h4>CONCACT</h4>
+          <ul v-for="voce in voceMenu">
+            <li>{{voce.contact}}</li>
+          </ul>
 
         </div>
-        <div class="">
+        <div class="box_sott_foot box_pag">
           <h4>PAGES</h4>
+          <div class="list_pag">
+            <div class="pag_sx">
+              <ul>
+                <li>Blog</li>
+                <li>Home</li>
+                <li>Shortecodes</li>
+              </ul>
+            </div>
+            <div class="pag_dx">
+              <ul>
+                <li>Blog</li>
+                <li>Home</li>
+                <li>Shortecodes</li>
+              </ul>
+            </div>
+          </div>
 
         </div>
-        <div class="">
+        <div class="box_sott_foot box_blog">
           <h4>BLOG</h4>
+          <div v-for="voce in voceMenu" class="dflex">
+            <div class="">
+              <img :src="voce.img" alt="">          
+            </div>
+            <div class="">
+              <h4>{{voce.title}}</h4>
+              <p>{{voce.data}}</p>
+            </div>
+          </div>
 
         </div>
       </div>

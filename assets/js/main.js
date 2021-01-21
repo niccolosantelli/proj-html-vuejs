@@ -5,19 +5,39 @@ let app = new Vue({
     voceMenu : [
       {
         name: "Courses",
-
+        about: "Masterstudy is Education WordPress theme feautred by Learning.",
+        contact: "USA, California 20, First Avenue,California",
+        page: "Blog",
+        img: 'assets/img/zaino.jpeg',
+        title: 'Our main target is to "Developing Yourself as a Leader"',
+        data: "- August 9, 2018"
       },
       {
-        name: "Course Formats"
+        name: "Course Formats",
+        about: "Management System (LMS) for online education.",
+        contact: "Tel.: +1 212 458 300 32",
+        page: "Home",
+        img: 'assets/img/proiet.jpeg',
+        title: "Those Other Collage Expensese You Aren't Thinking About",
+        data: "- June 3, 2015"
       },
       {
-        name: "Add Course"
+        name: "Add Course",
+        about: "Developed by StylemixThemes. ",
+        contact: "Fax: +1 212 375 24 14",
+        page:"Shortcodes"
       },
       {
-        name: "Pages"
+        name: "Pages",
+        contact: "info@masterstudy.com",
+        page: "Courses"
       },
       {
-        name: "Demos"
+        name: "Demos",
+        page:"Membership",
+      },
+      {
+        page:"Typography"
       }
     ],
 
